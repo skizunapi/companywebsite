@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KizunAPI - The self-managing API control plane</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav">
+  <span class="logo" aria-label="KizunAPI">
+    <img class="logo-mark" src="favicon.svg" alt="">
+    <span class="logo-word">izunAPI</span>
+  </span>
+  <div class="spacer"></div>
+  <a class="link" href="#platform">Platform</a>
+  <a class="link" href="#graph">Estate Graph</a>
+  <a class="link" href="#autopilot">Autopilot</a>
+  <a class="link" href="#deploy">Deployment</a>
+  <a class="link" href="#compare">Compare</a>
+  <a class="pill primary sm" href="#autopilot">Get a demo</a>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow mono">The self-managing API control plane</div>
+    <h1>Get the API <em>change</em> problem right.</h1>
+    <p class="lead">You don't have an API creation problem. You have an API change-management problem. KizunAPI continuously discovers your APIs, maps who really depends on them, and autonomously fixes, tests, and ships every breaking change — before it reaches production.</p>
+    <div class="protos">One control plane for <b>REST · gRPC · GraphQL · MCP · AI agents</b></div>
+    <div class="cta-row">
+      <a class="pill primary" href="#autopilot">Get a demo</a>
+      <a class="pill ghost light" href="#platform">See the platform</a>
+      <span class="note">Control plane SaaS · data plane in your VPC</span>
+    </div>
+
+    <!-- feature grid -->
+    <div class="fgrid">
+      <div class="f"><div class="k">Discover</div><h4>API Intelligence</h4><p>Live inventory, ownership, and real field-level usage.</p></div>
+      <div class="f"><div class="k">Understand</div><h4>Dependency Graph</h4><p>Field → service → customer, from production traffic.</p></div>
+      <div class="f"><div class="k">Act</div><h4>Autopilot</h4><p>Detect → fix → test → deploy → verify, autonomously.</p></div>
+      <div class="f"><div class="k">Govern</div><h4>Runtime Policy</h4><p>PII detection, anomaly alerts, audit evidence.</p></div>
+      <div class="f"><div class="k">Deliver</div><h4>Experience</h4><p>Docs, SDKs & portal always in sync with the contract.</p></div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== LOGO / SEGMENT STRIP ===== -->
+<div class="strip">
+  <div class="wrap row">
+    <span class="lbl mono">Built for the segments where change hurts most</span>
+    <div class="names">
+      <span>API-first SaaS</span><span>Fintech</span><span>Regulated Enterprise</span><span>Marketplace</span><span>AI-native</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== AI GOVERNANCE (dark) ===== -->
+<section class="pad dark" id="agents">
+  <div class="wrap split">
+    <div>
+      <div class="eyebrow mono">Beyond REST</div>
+      <h2 style="font-size:46px;margin:14px 0 18px">AI agents run on APIs. Govern their contracts the same way.</h2>
+      <p style="color:var(--n500);font-size:18px;line-height:1.45">MCP tools, agent-to-agent calls, and LLM-backed endpoints are just more contracts that break. KizunAPI treats them as first-class nodes in the same knowledge graph - so an agent tool-schema change gets the same detect-fix-verify loop as a payments API.</p>
+      <a class="pill primary" style="margin-top:26px" href="#autopilot">Explore the Autopilot</a>
+    </div>
+    <ul class="bullets">
+      <li><b>Agent-aware graph</b>MCP tools & A2A calls as contracts</li>
+      <li><b>Schema drift detection</b>on tool & function signatures</li>
+      <li><b>Field-level usage</b>which agent touches which field</li>
+      <li><b>LLM endpoint contracts</b>versioned and monitored</li>
+      <li><b>Blast radius</b>across services and agents alike</li>
+      <li><b>Policy & evidence</b>audit trail for every change</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== FOUNDATION (6-col) ===== -->
+<section class="pad" id="platform">
+  <div class="wrap">
+    <div class="sec-head center">
+      <div class="eyebrow mono">The platform</div>
+      <h2>But first, get the API layer right.</h2>
+      <p>Four layers that turn a patchwork of gateways, specs, and tribal knowledge into one self-managing system. We don't replace Apigee, Kong, or AWS Gateway — we make them inputs.</p>
+    </div>
+    <div class="six">
+      <div class="fcard"><div class="k">Layer 1</div><h4>API Experience</h4><p>Docs, SDKs, developer portal, and an AI assistant — regenerated automatically whenever the live contract changes.</p></div>
+      <div class="fcard"><div class="k">Layer 2</div><h4>API Intelligence</h4><p>Inventory, real production usage, dependency graph, ownership, risk, and context. The system of record for API dependencies that doesn't exist today.</p></div>
+      <div class="fcard"><div class="k">Layer 3</div><h4>API Autopilot</h4><p>Detect → analyze → generate → patch → test → deploy → verify. The autonomous remediation engine — and the heart of the MVP.</p></div>
+      <div class="fcard"><div class="k">Layer 4</div><h4>API Control Plane</h4><p>Connects to gateways, Kubernetes, Git, CI/CD, cloud, and service mesh. SaaS control plane; self-managed execution.</p></div>
+      <div class="fcard"><div class="k">Moat</div><h4>Usage-fused graph</h4><p>Knowledge graph + actual production usage down to the field + an automated remediation engine. Nobody has all three.</p></div>
+      <div class="fcard"><div class="k">Every protocol</div><h4>One model</h4><p>REST, gRPC, GraphQL, event and data contracts, MCP, and AI agents — all represented as contracts in the same graph.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ESTATE GRAPH (interactive, the key capability) ===== -->
+<section class="pad estate" id="graph">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow mono">The core · API Estate Graph</div>
+      <h2>The system of record for API dependencies that doesn't exist today.</h2>
+      <p>Every API, endpoint, schema, field, consumer, repo, service, deployment, customer and business capability — connected in one live graph, enriched with real production usage. This is the moat: it's what lets KizunAPI answer "who actually breaks?" in seconds, and it's what the Autopilot acts on. Hover the chain, click any node.</p>
+    </div>
+    <div class="eg-wrap">
+      <div class="eg-board">
+        <div class="eg-bar">
+          <div class="eg-hint"><span class="pulse"></span>Live estate · lit path</div>
+          <div class="eg-toggle" id="egToggle">
+            <button data-path="payments" class="on">Payments story</button>
+            <button data-path="identity">Identity story</button>
+          </div>
+          <button class="eg-rebuild" id="egRebuild">Rebuild ↻</button>
+        </div>
+        <div class="eg-chain" id="egChain"></div>
+      </div>
+      <aside class="eg-panel" id="egPanel"></aside>
+    </div>
+    <p class="eg-foot">Unlike a static catalog, the Estate Graph is fused with <b>field-level production usage</b> — so it knows the 3 consumers that actually read <b>customer_ref</b>, not the 6 that merely call the endpoint. That precision is what turns a breaking change from a day-long incident into an <b>11-minute autonomous run</b>.</p>
+  </div>
+</section>
+
+<!-- ===== AUTOPILOT DEMO ===== -->
+<section class="pad" id="autopilot" style="background:var(--n300)">
+  <div class="wrap">
+    <div class="sec-head center">
+      <div class="eyebrow mono">The MVP · running the real scenario</div>
+      <h2>The full lifecycle, running in minutes.</h2>
+      <p>A third-party payments API ships a breaking v3 at 09:14 UTC. No engineer was told. Step through exactly what KizunAPI does — from detection to a verified, deployed fix.</p>
+    </div>
+
+    <div class="demo">
+      <div class="demo-top">
+        <h3>KizunAPI Autopilot</h3>
+        <span class="mono" style="font-size:11px;color:var(--n600)">run · paysprint-v3-migration</span>
+        <div class="status"><span class="dot" id="statusDot"></span><span id="statusText">Idle — ready to run</span></div>
+      </div>
+      <div class="stepper" id="stepper">
+        <div class="st"><div class="num">1</div>Detect</div>
+        <div class="st"><div class="num">2</div>Analyze</div>
+        <div class="st"><div class="num">3</div>Blast radius</div>
+        <div class="st"><div class="num">4</div>Generate fix</div>
+        <div class="st"><div class="num">5</div>Test</div>
+        <div class="st"><div class="num">6</div>Deploy</div>
+        <div class="st"><div class="num">7</div>Verify</div>
+      </div>
+      <div class="stage" id="stage">
+        <h4>Ready when you are</h4>
+        <div class="sub">Press <b>Run next step</b> to begin. KizunAPI walks the whole change-management lifecycle for the PaySprint v3 breaking change — the real scenario from customer discovery.</div>
+        <div class="console">
+          <div class="l" style="animation-delay:.05s"><span class="t">[KizunAPI]</span> knowledge graph loaded · 340 APIs · 1,880 endpoints · 12,400 field-level usages</div>
+          <div class="l" style="animation-delay:.35s"><span class="t">[KizunAPI]</span> continuous contract monitor active on 22 external dependencies</div>
+          <div class="l ok" style="animation-delay:.7s"><span class="t">[KizunAPI]</span> awaiting run command…</div>
+        </div>
+      </div>
+      <div class="demo-actions">
+        <span class="hint" id="hint">Autonomous lifecycle · 7 stages</span>
+        <button class="pill ghost sm" id="resetBtn" onclick="resetDemo()" disabled>Reset</button>
+        <button class="pill primary sm" id="nextBtn" onclick="runStep()">Run next step</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DEPLOYMENT (dark) ===== -->
+<section class="pad dark" id="deploy">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow mono">Deployment model</div>
+      <h2 style="color:var(--n100)">Your infrastructure. Your rules.</h2>
+      <p>The control plane runs as SaaS — the intelligence, the graph, the migration engine. The execution and telemetry stay inside your environment. This hybrid split matches how enterprise security teams already buy.</p>
+    </div>
+    <div class="deploy-grid">
+      <div class="dep"><h4>Control plane — SaaS</h4><p>API intelligence, dependency graph, change detection, impact analysis, migration engine, policy, and AI agents.</p></div>
+      <div class="dep"><h4>Data plane — your VPC / K8s</h4><p>Gateways, services, traffic, telemetry, runtime enforcement, and local execution — nothing sensitive leaves your boundary.</p></div>
+      <div class="dep"><h4>Enterprise-ready</h4><p>SSO, RBAC, VPC isolation, full audit trail, and data retention controls — the way security teams expect to consume it.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="pad">
+  <div class="wrap">
+    <div class="sec-head center">
+      <div class="eyebrow mono">What discovery told us</div>
+      <h2>The pain is real, and it's expensive.</h2>
+      <p>Illustrative voices representing the personas and pain points surfaced in customer discovery across fintech, SaaS, and regulated enterprise.</p>
+    </div>
+    <div class="quotes">
+      <div class="quote">
+        <p>"We genuinely don't know how many external APIs we depend on. We find out when something breaks."</p>
+        <div class="who"><b>Head of Platform</b><span>API-first SaaS</span></div>
+      </div>
+      <div class="quote">
+        <p>"The last breaking change pulled nine engineers off roadmap for a full day. Nobody could tell me the blast radius."</p>
+        <div class="who"><b>VP Engineering</b><span>Fintech / payments</span></div>
+      </div>
+      <div class="quote">
+        <p>"If software could detect, patch, test and deploy an API change for us, it would eliminate most of what my team does on migrations."</p>
+        <div class="who"><b>CTO</b><span>Regulated enterprise</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MIGRATION ===== -->
+<section class="pad" style="background:var(--n300)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow mono">Where we start</div>
+      <h2>Point us at what you already have.</h2>
+      <p>KizunAPI ingests from the gateways and tools you run today and makes them inputs into the knowledge graph. No rip-and-replace on day one.</p>
+    </div>
+    <div class="mig">
+      <div class="migcard"><h4>From Apigee / Kong</h4><p>Import existing API configs and specs; we start building the dependency graph from your gateway inventory immediately.</p><a href="#autopilot">See how →</a></div>
+      <div class="migcard"><h4>From Git &amp; CI/CD</h4><p>Connect repos and pipelines so we can map call-sites and open migration PRs where the code actually lives.</p><a href="#autopilot">See how →</a></div>
+      <div class="migcard"><h4>From spec diffing</h4><p>Replace the manual oasdiff "keep-a-baseline-and-re-run" hack with continuous, semantic contract monitoring.</p><a href="#autopilot">See how →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMPARISON ===== -->
+<section class="pad" id="compare">
+  <div class="wrap">
+    <div class="sec-head center">
+      <div class="eyebrow mono">Why KizunAPI</div>
+      <h2>Everyone owns a slice. KizunAPI owns the estate.</h2>
+      <p>Gateways route traffic, design tools shape specs, observability watches runtime. KizunAPI's wedge is the layer above all of them — a cross-vendor estate graph with ownership, dependency and lifecycle intelligence that no single incumbent delivers end-to-end.</p>
+    </div>
+    <div class="cmp-scroll">
+    <table class="cmp">
+      <thead>
+        <tr>
+          <th>Capability</th>
+          <th class="us">KizunAPI</th>
+          <th>Kong</th>
+          <th>Apigee</th>
+          <th>MuleSoft</th>
+          <th>Postman</th>
+          <th>Datadog</th>
+          <th>ServiceNow</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="feat">Live API inventory &amp; ownership</td><td class="us yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✕</td><td class="yes">✓</td></tr>
+        <tr><td class="feat">Design-time governance &amp; linting</td><td class="us yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✕</td><td class="part">◐</td></tr>
+        <tr><td class="feat">API Catalog</td><td class="us yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✕</td><td class="yes">✓</td></tr>
+        <tr><td class="feat">Cross-platform discovery</td><td class="us yes">✓</td><td class="part">◐</td><td class="part">◐</td><td class="yes">✓</td><td class="part">◐</td><td class="part">◐</td><td class="yes">✓</td></tr>
+        <tr><td class="feat">API Estate Graph</td><td class="us yes">✓</td><td class="no">✕</td><td class="part">◐</td><td class="part">◐</td><td class="no">✕</td><td class="part">◐</td><td class="no">✕</td></tr>
+        <tr><td class="feat">Ownership intelligence</td><td class="us yes">✓</td><td class="part">◐</td><td class="part">◐</td><td class="part">◐</td><td class="yes">✓</td><td class="no">✕</td><td class="yes">✓</td></tr>
+        <tr><td class="feat">Dependency / impact analysis</td><td class="us yes">✓</td><td class="part">◐</td><td class="part">◐</td><td class="yes">✓</td><td class="part">◐</td><td class="yes">✓</td><td class="part">◐</td></tr>
+        <tr><td class="feat">Lifecycle intelligence</td><td class="us yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✕</td><td class="part">◐</td></tr>
+        <tr><td class="feat">Cross-vendor control plane</td><td class="us yes">✓</td><td class="no">✕</td><td class="no">✕</td><td class="no">✕</td><td class="no">✕</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="legend">
+      <span><b class="yes">✓</b> Native capability</span>
+      <span><b class="part">◐</b> Partial / limited</span>
+      <span><b class="no">✕</b> Not offered</span>
+    </div>
+    <p class="cmp-note">Read it by column, not by row. The incumbents each win their home turf — Kong and Apigee on the gateway, Postman on design and test, Datadog on observability, ServiceNow on cross-vendor workflow. KizunAPI's wedge is the band in the middle — <b>cross-platform discovery, the estate graph, ownership, dependency and lifecycle intelligence</b> — the only column that's a clean ✓ the whole way down. Capability snapshot as of October 2026; vendor features move quickly, so we keep this matrix sourced and dated.</p>
+  </div>
+</section>
+
+<!-- ===== BIG CTA ===== -->
+<section class="bigcta">
+  <div class="wrap">
+    <div class="eyebrow mono">The autonomous lifecycle</div>
+    <h2>Get the API change problem right.</h2>
+    <p class="tagline">One continuous loop — from discovery to retirement, with as little human intervention as possible.</p>
+    <div class="flow">
+      <div class="stage" style="animation-delay:.00s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span><span class="lb">Discover</span></div>
+      <div class="arrow" style="animation-delay:.08s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+
+      <div class="stage key" style="animation-delay:.16s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.4"/><circle cx="18" cy="6" r="2.4"/><circle cx="12" cy="18" r="2.4"/><path d="M7.6 7.6l3.1 8.2M16.4 7.6l-3.1 8.2M8 6h8"/></svg></span><span class="lb">Estate Graph</span></div>
+      <div class="arrow" style="animation-delay:.24s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+
+      <div class="stage" style="animation-delay:.32s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 1 3 11.2V17a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-2.8A6 6 0 0 1 12 3Z"/><path d="M9.5 21h5"/></svg></span><span class="lb">Understand</span></div>
+      <div class="arrow" style="animation-delay:.40s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+
+      <div class="stage" style="animation-delay:.48s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 3 3 5-6 5 5"/><path d="M14 9h3v3"/></svg></span><span class="lb">Predict impact</span></div>
+      <div class="arrow" style="animation-delay:.56s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+
+      <div class="stage" style="animation-delay:.64s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 0 5.4-5.4l-2.3 2.3-2-2 2.3-2.3Z"/></svg></span><span class="lb">Fix</span></div>
+      <div class="arrow" style="animation-delay:.72s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+
+      <div class="stage" style="animation-delay:.80s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v5l-5 9a2 2 0 0 0 1.8 3h10.4A2 2 0 0 0 19 17l-5-9V3"/><path d="M8 14h8"/></svg></span><span class="lb">Test</span></div>
+      <div class="arrow" style="animation-delay:.88s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+
+      <div class="stage" style="animation-delay:.96s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15c-2 2-2 5-2 5s3 0 5-2M14 4c3-1 6 0 6 0s1 3 0 6c-1.3 3.8-5 7-9 8l-3-3c1-4 4.2-7.7 8-9"/><circle cx="14.5" cy="9.5" r="1.5"/></svg></span><span class="lb">Deploy</span></div>
+      <div class="arrow" style="animation-delay:1.04s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+
+      <div class="stage" style="animation-delay:1.12s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg></span><span class="lb">Verify</span></div>
+      <div class="arrow" style="animation-delay:1.20s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+
+      <div class="stage" style="animation-delay:1.28s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M6 7l1 12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-12"/></svg></span><span class="lb">Retire</span></div>
+    </div>
+    <div class="cta-row">
+      <a class="pill dark" href="#autopilot">Run the demo</a>
+      <a class="pill ghost" href="#platform">See the platform</a>
+    </div>
+    <!-- <div class="badges">
+      <span>SOC 2 Type II</span><span>ISO 27001</span><span>PII governance</span><span>VPC-isolated</span><span>Full audit trail</span>
+    </div> -->
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <span class="logo" aria-label="KizunAPI">
+      <img class="logo-mark" src="favicon.svg" alt="">
+      <span class="logo-word">izunAPI</span>
+    </span>
+    <div class="cols">
+      <div><p>The self-managed API platform for modern software infrastructure. MVP demonstration prototype for scoping discussions.</p></div>
+      <div><h5>Platform</h5><a href="#platform">API Experience</a><a href="#platform">API Intelligence</a><a href="#autopilot">API Autopilot</a><a href="#deploy">Control Plane</a></div>
+      <div><h5>Segments</h5><a href="#">API-first SaaS</a><a href="#">Fintech</a><a href="#">Regulated enterprise</a><a href="#">AI-native</a></div>
+      <div><h5>Company</h5><a href="#compare">Why KizunAPI</a><a href="#autopilot">Demo</a><a href="#deploy">Security</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts: data first (defines window.KizunAPI), then the controller. -->
+<script src="js/estate-graph.js"></script>
+<script src="js/autopilot-data.js"></script>
+<script src="js/autopilot.js"></script>
+</body>
+</html>
